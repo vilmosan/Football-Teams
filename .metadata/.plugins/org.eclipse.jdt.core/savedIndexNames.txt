@@ -1,0 +1,24 @@
+INDEX VERSION 1.131+C:\Users\Narancsosalma\Desktop\play-1.4.3\.metadata\.plugins\org.eclipse.jdt.core
+235108868.index
+325515309.index
+1751092330.index
+3968534323.index
+3868528473.index
+2281421973.index
+2022032244.index
+1928024419.index
+2951444154.index
+1116868011.index
+1277950601.index
+2289321568.index
+895098335.index
+461048922.index
+990330547.index
+2808540658.index
+1718042080.index
+3128152863.index
+1141795782.index
+467664614.index
+4292789932.index
+1696956923.index
+287861486.index

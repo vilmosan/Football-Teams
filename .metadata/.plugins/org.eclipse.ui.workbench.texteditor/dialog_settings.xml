@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="positions"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="positions"/>
+			<item value="esemény"/>
+			<item value="új esem"/>
+			<item value="Library"/>
+			<item value="library"/>
+			<item value="LibraryBook"/>
+			<item value="librarybooks"/>
+			<item value="libraryBooks"/>
+			<item value="th"/>
+			<item value="wob"/>
+			<item value="clubBooks"/>
+			<item value="libraries"/>
+			<item value="libraryId"/>
+			<item value="book"/>
+			<item value="books"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Club"/>
+			<item value="club"/>
+			<item value="Player"/>
+			<item value="mainScreen"/>
+			<item value="clubs"/>
+			<item value="clubName"/>
+			<item value="player"/>
+			<item value="players"/>
+			<item value="Players"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1235"/>
+		<item key="DIALOG_Y_ORIGIN" value="509"/>
+		<item key="DIALOG_WIDTH" value="331"/>
+		<item key="DIALOG_HEIGHT" value="444"/>
+		<item key="DIALOG_FONT_NAME" value="1|Noto Sans|9.0|0|GTK|1|"/>
+	</section>
+</section>

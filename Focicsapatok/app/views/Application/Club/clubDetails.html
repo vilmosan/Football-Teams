@@ -1,0 +1,91 @@
+#{extends 'main.html' /}
+#{set title:'NLSZ - Klub megtekintése' /}
+
+#{if flash.errorMessage != null}
+	<div style="color:red">${flash.errorMessage}</div>
+#{/if}
+
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<h1 class="text-center mb-4 display-4">${club.clubName}</h1>
+		<div class="table-responsive">
+		    <table class="table table-borderless">
+			  <thead>
+			    <tr>
+			      <th scope="col">Klub alapításának éve</th>
+			      <th scope="col">Klub székhelye (Ország)</th>
+			      <th scope="col">Klub székhelye (Megye / Régió)</th>
+			      <th scope="col">Klub székhelye (Város)</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			      <td>${club.clubEstablished}</td>
+			      <td>${club.clubCountry}</td>
+			      <td>${club.clubRegion}</td>
+			      <td>${club.clubCity}</td>
+			    </tr>
+			  </tbody>
+			</table>
+		  </div>
+	</div>
+</div>
+
+<div class="col-11 mx-auto">
+    <div class="table-title p-3">
+        <h2 style="text-align: center;">${club.clubName} - Játékosállomány</h2>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Játékos neve</th>
+                    <th scope="col">Játékengedély száma</th>
+                    <th scope="col">Havi fizetés</th>
+                    <th scope="col">Szerződés kezdete</th>
+                    <th scope="col">Szerződés vége</th>
+                    <th scope="col">Poszt</th>
+                    <th scope="col" class="text-center">Játékos törlése</th>
+                </tr>
+                </thead>
+                <tbody>
+                #{list items:club.players, as:'player'}
+					<tr>
+						<td>${player.playerName}</td>
+						<td>${player.playerLicense}</td>
+						<td>${player.playerSalary} Ft</td>
+						<td>${player.playerContractStart}</td>
+						<td>${player.playerContractExpire}</td>
+						<td>${player.playerPosition}</td>
+						<td align="center"><a href="deletePlayer?playerId=${player.playerId}" class="btn btn-danger btn-sm" role="button">Törlés</a></td>
+					</tr>
+				#{/list}
+                <tfoot>
+	                <div class="justify-content-center">
+	                    <td colspan="8" align="center">
+	                    	<div class="h6">                
+		                        <div>
+									<span style="color: crimson">#{error 'errorMessage1' /}</span>
+								</div>
+								<div>
+									<span style="color: crimson">#{error 'errorMessage2' /}</span>
+								</div>
+								<div>
+									<span style="color: crimson">#{error 'errorMessage3' /}</span>
+								</div>
+								<div>
+									<span style="color: crimson">#{error 'errorMessage4' /}</span>
+								</div>
+							</div>
+							<div>
+	                        	<a href="/createPlayer?clubId=${club.clubId}" class="btn btn-success btn-bg" role="button">Új játékos hozzáadása</a>
+	                        </div>
+	                    </td>
+	                </div>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+	<a href="/" class="btn btn-primary btn-md" role="button">Vissza a főoldalra</a>
+</div>

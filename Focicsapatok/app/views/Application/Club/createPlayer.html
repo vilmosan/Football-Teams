@@ -1,0 +1,65 @@
+#{extends 'main.html' /}
+#{set title:'NLSZ - Új játékos hozzáadása' /}
+
+<div class="col-lg-4 col-md-5 col-sm-8 m-auto">
+	<form action="createPlayer" method="post">
+		<div class="text-center h1 mt-3">Játékos hozzáadása</div>
+		
+		<!-- Hidden inputként beviszem az adott klub id-jét amit a clubDetails képernyőből nyerek ki-->
+		<div>
+			<input type="hidden" name="clubId" value="${clubId}"/>
+			<span style="color: crimson">#{error 'clubId' /}</span>
+		</div>
+		
+		<div class="mt-3">
+			<label for="playerNameForm">Játékos neve:</label>
+			<input type="text" name="playerName" value="${flash.playerName}" id="playerNameForm" class="form-control" placeholder="Minta Marcell"/>
+			<span style="color: crimson">#{error 'playerName' /}</span>
+		</div>
+		<div class="mt-3">
+			<label for="playerLicenseForm">Játékengedély száma:</label>
+			<input type="text" name="playerLicense" value="${flash.playerLicense}" id="playerLicenseForm" class="form-control" placeholder="12345678"/>
+			<span style="color: crimson">#{error 'playerLicense' /}</span>
+		</div>
+		<div class="mt-3">
+			<label for="playerSalaryForm">Havi fizetés (forint):</label>
+			<input type="text" name="playerSalary" value="${flash.playerSalary}" id="playerSalaryForm" class="form-control" placeholder="> 150000"/>
+			<span style="color: crimson">#{error 'playerSalary' /}</span>
+		</div>
+		<div class="mt-3">
+			<label for="playerContractStartForm">Szerződés kezdeti dátuma:</label>
+			<input type="text" name="playerContractStart" value="${flash.playerContractStart}" id="playerContractStartForm" class="form-control" placeholder="ÉÉÉÉ-HH-NN"/>
+			<span style="color: crimson">#{error 'playerContractStart' /}</span>
+		</div>
+		<div class="mt-3">
+			<label for="playerContractExpireForm">Szerződés lejárati dátuma:</label>
+			<input type="text" name="playerContractExpire" value="${flash.playerContractExpire}" id="playerContractExpireForm" class="form-control" placeholder="ÉÉÉÉ-HH-NN"/>
+			<span style="color: crimson">#{error 'playerContractExpire' /}</span>
+		</div>
+		<!--
+		<div>
+			<label for="playerPositionForm">Játékos pozíciója:</label>
+			<input type="text" name="playerPosition" value="${flash.playerPosition}" id="playerPositionForm" class="form-control" placeholder="Kapus / Védő / Középpályás / Csatár"/>
+			<span style="color: crimson">#{error 'playerPosition' /}</span>
+		</div>-->
+		
+		<div class="mt-3">
+			<!-- Apróság: A dropdown menü nem jegyzi meg a kiválasztott elemet ha egy másik input elhasal a validálás során. -->
+			<label for="playerPositionForm">Játékos pozíciója:</label>
+			<select class="custom-select "name="playerPosition" id="playerPositionForm">
+			  <option value="Kapus">Kapus</option>
+			  <option value="Védő">Védő</option>
+			  <option value="Középpályás">Középpályás</option>
+			  <option value="Csatár">Csatár</option>
+			</select> 
+			<span style="color: crimson">#{error 'playerPosition' /}</span>
+		</div>
+			
+		<div class="text-center mt-4">
+			<button type="submit" class="btn btn-success">Játékos hozzáadása</button>
+		</div>
+		<div class="text-center mt-4">
+			<a href="/" class="btn btn-primary btn-md" role="button">Vissza a főoldalra</a>
+		</div>
+	</form>
+</div>

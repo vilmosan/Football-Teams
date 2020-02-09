@@ -1,0 +1,27 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Focicsapatok
+GET     /                                       ClubController.index
+
+GET		/createClub								ClubCreationController.createClubForm
+POST	/createClub								ClubCreationController.createClub
+
+GET		/createPlayer							PlayerCreationController.createPlayerForm
+POST	/createPlayer							PlayerCreationController.createPlayer
+
+GET		/clubDetails							ClubDetailsController.clubDetails
+
+GET		/deleteClub								ClubDeleteController.deleteClub
+GET		/deletePlayer						    PlayerDeleteController.deletePlayer
+
+
+# Ignore favicon requests
+GET     /favicon.ico                            404
+
+# Map static resources from the /app/public folder to the /public path
+GET     /public/                                staticDir:public
+
+# Catch all
+*       /{controller}/{action}                  {controller}.{action}

@@ -1,0 +1,39 @@
+#{extends 'main.html' /}
+#{set title:'NLSZ - Új klub létrehozása' /}
+
+<div class="col-lg-4 col-md-5 col-sm-8 m-auto">
+	<form action="createClub" method="post">
+		<div class="text-center h1 mt-3">Klub létrehozása</div>
+		<div>
+			<label for="clubNameForm">Klub neve:</label>
+			<input type="text" name="clubName" value="${flash.clubName}" id="clubNameForm" class="form-control">
+			<span style="color: crimson">#{error 'clubName' /}</span>
+		</div>
+		<div class="mt-4">
+			<label for="clubEstablishedForm">Klub alapításának éve:</label>
+			<input type="text" name="clubEstablished" value="${flash.clubEstablished}" id="clubEstablishedForm" class="form-control">
+			<span style="color: crimson">#{error 'clubEstablished' /}</span>
+		</div>
+		<div class="mt-3">
+			<label for="clubCountryForm">Klub székhelye (Ország):</label>
+			<input type="text" name="clubCountry" value="${flash.clubCountry}" id="clubCountryForm" class="form-control">
+			<span style="color: crimson">#{error 'clubCountry' /}</span>
+		</div>
+		<div class="mt-3">
+			<label for="clubRegionForm">Klub székhelye (Megye / Régió):</label>
+			<input type="text" name="clubRegion" value="${flash.clubRegion}" id="clubRegionForm" class="form-control">
+			<span style="color: crimson">#{error 'clubRegion' /}</span>
+		</div>
+		<div class="mt-3">
+			<label for="clubCityForm">Klub székhelye (Város):</label>
+			<input type="text" name="clubCity" value="${flash.clubCity}" id="clubCityForm" class="form-control">
+			<span style="color: crimson">#{error 'clubCity' /}</span>
+		</div>
+		<div class="text-center mt-4">
+			<button type="submit" class="btn btn-success">Klub létrehozása</button>
+		</div>
+		<div class="text-center mt-4">
+			<a href="/" class="btn btn-primary btn-md" role="button">Vissza a főoldalra</a>
+		</div>
+	</form>
+</div>

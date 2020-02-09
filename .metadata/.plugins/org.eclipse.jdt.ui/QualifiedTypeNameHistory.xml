@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.io.Console"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.Table"/>
+<fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
+<fullyQualifiedTypeName name="javax.persistence.Column"/>
+<fullyQualifiedTypeName name="play.db.jpa.GenericModel"/>
+<fullyQualifiedTypeName name="com.jamonapi.utils.Logger"/>
+<fullyQualifiedTypeName name="java.util.logging.Logger"/>
+<fullyQualifiedTypeName name="play.Logger"/>
+<fullyQualifiedTypeName name="org.apache.commons.lang.StringUtils"/>
+<fullyQualifiedTypeName name="org.apache.commons.lang.RandomStringUtils"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="play.data.validation.Validation"/>
+<fullyQualifiedTypeName name="play.data.validation.Required"/>
+<fullyQualifiedTypeName name="play.mvc.Before"/>
+<fullyQualifiedTypeName name="play.mvc.Controller"/>
+<fullyQualifiedTypeName name="models.LibraryBook"/>
+<fullyQualifiedTypeName name="models.Library"/>
+<fullyQualifiedTypeName name="models.Club"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.text.ParseException"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator"/>
+<fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+<fullyQualifiedTypeName name="java.time.format.ResolverStyle"/>
+</qualifiedTypeNameHistroy>
